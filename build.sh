@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# meant to be run inside a container
+
 curl -L https://github.com/kubernetes/kubernetes/archive/v1.1.1.tar.gz > k8s-1.1.1.tar.gz
 tar -xvzf k8s-1.1.1.tar.gz
 mkdir -p $GOPATH/src/k8s.io

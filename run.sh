@@ -1,1 +1,2 @@
-docker run --rm -v $PWD:/pwd -w /pwd alpine:3.1 kubectl $1
+#!/bin/bash
+docker run --rm -v $PWD:/pwd -w /pwd alpine:3.1 ./kubectl $1
